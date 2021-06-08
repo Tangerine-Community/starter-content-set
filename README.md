@@ -66,5 +66,3 @@ npm run start
 ```
 
 Note that it helps to have a Chrome Profile per project that you work on so that they don't end up sharing memory. For example, a Chrome profile for this project could be called `my-content-set` named after the repository.
-# starter-content-set
-# starter-content-set
