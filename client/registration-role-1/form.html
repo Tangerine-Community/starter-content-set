@@ -31,13 +31,13 @@
         caseService.setParticipantData(participantRole2.id, 'participant_id', `${getValue('participant_id')}-${role2ParticipantNumber}`)
         role2ParticipantNumber++
       }
-      // The parameters for caseService.createNotification() are label, description, link, icon (see https://material.io/icons), background color, 
-      // whether or not to persist more than once (true or false), and wether or not this notification should enforce attention and warn when 
+      // The parameters for caseService.createNotification() are label, description, link, icon (see https://material.io/icons), background color,
+      // whether or not to persist more than once (true or false), and wether or not this notification should enforce attention and warn when
       // navigating away from the case (true or false).
       caseService.createNotification(
-        `Registration success!`, 
+        `Registration success!`,
         `
-          Thank you for registering 
+          Thank you for registering
             ${caseService.getParticipantData(participantRole1.id, 'first_name')}
             ${caseService.getParticipantData(participantRole1.id, 'last_name')}.
 
@@ -62,7 +62,7 @@
       }
     "
   >
-    <tangy-input name="first_name" label="First name" required></tangy-input>
+    <tangy-input name="first_name" label="First name is great" required></tangy-input>
     <tangy-input name="last_name" label="Last name" required></tangy-input>
     <tangy-input name="screening_date" type="date" label="Screening date" inner-label=" " disabled></tangy-input>
     <tangy-radio-buttons name="consent" label="Does participant consent to participate?">
